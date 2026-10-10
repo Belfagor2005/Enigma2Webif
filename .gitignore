@@ -1,0 +1,62 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+
+# MAUI / Android
+*.apk
+*.aab
+*.keystore
+*.jks
+*.pfx
+*.p12
+Resources/Raw/AboutAssets.txt
+Resources/Raw/SeedData.json
+Platforms/Android/Resources/values/GoogleServiceInfo.plist
+Platforms/Android/google-services.json
+
+# Xamarin / MAUI intermediate
+*.binlog
+*.nupkg
+.nuget/
+packages/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Sources (this repo is showcase only)
+*.cs
+*.xaml
+*.csproj
+*.sln
+*.slnx
+*.resx
+*.json
+!package.json
