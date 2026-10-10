@@ -2,25 +2,25 @@
 |:---:|
 | <img src="Screen/home.png" height="380"/> |
 
-| Bouquet | Channels | Search |
-|:---:|:---:|:---:|
-| <img src="Screen/bouquet1.png" height="380"/> | <img src="Screen/bouquet2.png" height="380"/> | <img src="Screen/splash.png" height="380"/> |
+| Bouquet | Channels |
+|:---:|:---:|
+| <img src="Screen/bouquet1.png" height="380"/> | <img src="Screen/bouquet2.png" height="380"/> |
 
-| Power Menu | Remote | Screenshot |
-|:---:|:---:|:---:|
-| <img src="Screen/powermenu.png" height="380"/> | <img src="Screen/remote.png" height="380"/> | <img src="Screen/screenshot.png" height="380"/> |
+| Search | Power Menu |
+|:---:|:---:|
+| <img src="Screen/search.png" height="380"/> | <img src="Screen/powermenu.png" height="380"/> |
 
+| Remote | Screenshot |
+|:---:|:---:|
+| <img src="Screen/remote.png" height="380"/> | <img src="Screen/screenshot.png" height="380"/> |
 
-| Epg | Preferiti | Settings |
-|:---:|:---:|:---:|
-| <img src="Screen/epg.png" height="380"/> | <img src="Screen/preferiti.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
-
+| Epg | Settings |
+|:---:|:---:|
+| <img src="Screen/epg.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
 
 | Telnet | Ftp |
 |:---:|:---:|
 | <img src="Screen/telnet.png" height="380"/> | <img src="Screen/ftp.png" height="380"/> |
-
-
 
 | Boxinfo | Boxinfo |
 |:---:|:---:|
