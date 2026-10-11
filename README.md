@@ -53,41 +53,53 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 - **About Page** — Credits, source code, support links
 
 ---
-
 ## 📸 Screenshots
 
-| Home |
-|:---:|
-| <img src="Screen/home.png" height="380"/> |
+### 🏠 Home & Navigation
 
-| Bouquet | Channels |
+| Home (1) | Home (2) | Home (3) |
+|:---:|:---:|:---:|
+| <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> | <img src="Screen/home3.png" height="380"/> |
+
+### 📺 Content
+
+| Bouquet | Channels | EPG |
+|:---:|:---:|:---:|
+| <img src="Screen/bouquet.png" height="380"/> | <img src="Screen/channels.png" height="380"/> | <img src="Screen/epg.png" height="380"/> |
+
+| Search | Live TV | Recordings |
+|:---:|:---:|:---:|
+| <img src="Screen/search.png" height="380"/> | <img src="Screen/livetv1.png" height="380"/> | <img src="Screen/recordings.png" height="380"/> |
+
+### 🎛️ Control
+
+| Remote | Power Menu | Sleep Timer |
+|:---:|:---:|:---:|
+| <img src="Screen/remote.png" height="380"/> | <img src="Screen/powermenu.png" height="380"/> | <img src="Screen/sleeptimers.png" height="380"/> |
+
+| Timers (1) | Timers (2) | OSD Message |
+|:---:|:---:|:---:|
+| <img src="Screen/timers1.png" height="380"/> | <img src="Screen/timers2.png" height="380"/> | <img src="Screen/osdmessage.png" height="380"/> |
+
+| Signal Meter | Parental Control |
 |:---:|:---:|
-| <img src="Screen/bouquet1.png" height="380"/> | <img src="Screen/bouquet2.png" height="380"/> |
+| <img src="Screen/signalmeter.png" height="380"/> | <img src="Screen/parentalcontrol.png" height="380"/> |
 
-| Search | Power Menu |
+### 🛠️ Tools
+
+| Screenshot | Telnet | FTP |
+|:---:|:---:|:---:|
+| <img src="Screen/screenshot.png" height="380"/> | <img src="Screen/telnet.png" height="380"/> | <img src="Screen/ftp.png" height="380"/> |
+
+### ℹ️ Info & Settings
+
+| Box Info (1) | Box Info (2) | Settings |
+|:---:|:---:|:---:|
+| <img src="Screen/boxinfo.png" height="380"/> | <img src="Screen/boxinfo2.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
+
+| Guide | About |
 |:---:|:---:|
-| <img src="Screen/search.png" height="380"/> | <img src="Screen/powermenu.png" height="380"/> |
-
-| Remote | Screenshot |
-|:---:|:---:|
-| <img src="Screen/remote.png" height="380"/> | <img src="Screen/screenshot.png" height="380"/> |
-
-| Epg | Settings |
-|:---:|:---:|
-| <img src="Screen/epg.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
-
-| Telnet | Ftp |
-|:---:|:---:|
-| <img src="Screen/telnet.png" height="380"/> | <img src="Screen/ftp.png" height="380"/> |
-
-| Boxinfo | Boxinfo |
-|:---:|:---:|
-| <img src="Screen/boxinfo.png" height="380"/> | <img src="Screen/boxinfo2.png" height="380"/> |
-
-| About | Guida |
-|:---:|:---:|
-| <img src="Screen/about.png" height="380"/> | <img src="Screen/guida.png" height="380"/> |
-
+| <img src="Screen/guida.png" height="380"/> | <img src="Screen/about.png" height="380"/> |
 
 ---
 
