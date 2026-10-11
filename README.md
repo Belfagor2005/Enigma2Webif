@@ -29,30 +29,41 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 ## ✨ Features
 
 ### 🎛️ Control
-- **Multi-Box** — Save multiple receiver profiles and switch instantly
-- **Remote Control** — Full virtual remote with colored buttons, numbers, playback, TV/Radio/Audio/Video
+- **Multi-Box** — Save multiple receiver profiles with encrypted passwords (SecureStorage)
+- **Full Virtual Remote** — Arrow keys, OK, Menu, Info, EPG, Exit, colored buttons, numbers, playback, TV/Radio/Audio/Video
 - **Power Menu** — Standby, Deep Standby, Reboot, Restart Enigma2, Wake Up
-- **Sleep Timer** — Programmed shutdown
+- **Sleep Timer** — Programmed shutdown with configurable delay
+- **OSD Messages** — Send popup messages to the TV screen
+- **Signal Meter** — Live SNR / AGC / BER monitoring with auto-refresh
+- **Parental Control** — PIN-protected channels & bouquets with temporary unlock
 
 ### 📺 Content
-- **Bouquets & Channels** — Browse all your favorites with live EPG Now info
-- **EPG Guide** — Full program guide with details
-- **Global Search** — Search across channels and programs at once
-- **Zap** — Change channel with a single tap
+- **Bouquets & Channels** — Browse favorites with picon support and live EPG Now info
+- **EPG Guide** — Full program guide with time badges, LIVE indicator and REC button
+- **Global Search** — Search channels and programs simultaneously
+- **Zap** — Instant channel switching with one tap
+- **Timers** — Create from EPG, edit, delete scheduled recordings
 
 ### 🛠️ Tools
 - **Screenshot** — Capture the box screen in real time
-- **Telnet** — Direct terminal with quick commands (reboot, df, free, uptime)
-- **FTP** — Browse, download, upload files; text file viewer included
-- **Box Info** — Firmware, kernel, tuners, HDD, network, RAM
+- **Telnet** — Direct terminal with quick commands (reboot, df, free, uptime, ps, ifconfig)
+- **FTP** — Browse, download, upload files with built-in text viewer
+- **Box Info** — Firmware, kernel, chipset, tuners, HDD, network, RAM
+
+### 🎬 Streaming
+- **Live TV** — Watch the current channel via VLC or external player (transcoded stream on port 8001)
+- **Recordings** — Browse and play recorded movies from the box HDD
+- **Playlist Support** — Automatic extraction from .m3u/.m3u8 files
+- **Smart Launcher** — 4-level fallback: VLC → VLC (data only) → chooser → browser
 
 ### 🌍 Experience
 - **5 Languages** — Italian, English, German, French, Spanish (live switch)
-- **Light / Dark Theme** — Follows system settings
-- **Integrated Guide** — Step-by-step help for every feature
+- **Dark Theme** — Modern dark UI with gradient tiles
+- **Integrated Guide** — 15-section step-by-step help
 - **About Page** — Credits, source code, support links
 
 ---
+
 ## 📸 Screenshots
 
 ### 🏠 Home & Navigation
@@ -135,16 +146,20 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 The starting point. Shows:
 - **Box name** and **connection status**
 - **Current channel** with program info
-- **Quick tiles** to every feature
+- **18 gradient tiles** organized in 5 groups: TV, Recordings, Controls, Tools, Info
 
 Tap the ⟳ button to refresh status.
 
 ### 📺 Bouquets & Channels
 1. Open **Bouquet** tab
 2. Tap a bouquet to see its channels
-3. Each channel shows the current program (EPG Now)
+3. Each channel shows:
+   - **Picon** (channel logo)
+   - **Channel name**
+   - **EPG Now** program with time range and live progress bar
 4. **Tap a channel** → immediate zap
-5. **Tap the EPG button** → full program guide for that channel
+5. **Tap the lock icon** → block/unblock (requires PIN)
+6. **Tap the EPG button** → full program guide
 
 ### 🔍 Search
 - Search channels and programs at the same time
@@ -153,12 +168,15 @@ Tap the ⟳ button to refresh status.
 
 ### 🎮 Remote Control
 Full virtual remote with:
-- Arrow keys, OK, Menu, Info, EPG, Exit
-- **Colored buttons** (Red, Green, Yellow, Blue) — contextual
-- Volume / Mute / Channel +/-
-- Numbers 0-9
-- Playback: Rewind, Play, Pause, Stop, Forward
-- TV / Radio / Audio / Video switches
+- Numbers 0-9 (top row)
+- **Colored buttons** (Red, Green, Yellow, Blue)
+- PVR / Arrow keys / Menu
+- EPG / OK / Exit
+- INFO / TEXT
+- Volume ▲▼ / Audio / Mute / Help / Channel ▲▼
+- Playback: Rewind, Play, Pause, Forward
+- TV / Record / Stop / Radio
+- Previous / Next
 
 ### ⚡ Power Menu
 - **Standby** — Low-power sleep
@@ -167,8 +185,55 @@ Full virtual remote with:
 - **Restart Enigma2** — Restart GUI only
 - **Wake Up** — Wake from standby
 
+### ⏰ Timers
+- Create timers directly from EPG (tap REC button on a program)
+- Edit existing timers (name, description, begin/end time, options)
+- Delete timers
+- Options: Enabled, JustPlay, After event (Nothing/Standby/Deep Standby/Auto)
+
+### 😴 Sleep Timer
+Choose a delay (5, 10, 15, 30, 60 minutes) and press **Start Sleep Timer**.
+The box goes to standby after the selected time. Press **Cancel** to disable.
+
+### 💬 OSD Messages
+Send popup messages to the TV screen:
+- Type your message
+- Choose type (Info, Warning, Error)
+- Set duration (5-60 seconds)
+- Tap **Send to TV**
+
+### 📶 Signal Meter
+Live monitoring of the current tuner:
+- **SNR** — Signal to Noise Ratio with quality label (Excellent/Good/Fair/Weak)
+- **AGC** — Automatic Gain Control
+- **BER** — Bit Error Rate
+- Auto-refresh every 2 seconds (can be toggled off)
+
+### 🔒 Parental Control
+Protect channels and bouquets with a 4-digit PIN:
+1. Open **Parental Control** from Home
+2. Tap **Set PIN** and enter a 4-digit code
+3. Enable protection
+4. Choose unlock duration (5/10/15/30/60 minutes)
+5. Block channels or bouquets by tapping the 🔓 icon in their lists
+6. When zapping a blocked channel, enter the PIN → it stays unlocked for the configured duration
+7. Use **Re-lock all now** to immediately re-lock all temporarily unlocked items
+
 ### 📸 Screenshot
 Tap **Refresh** to grab the current screen of your box.
+
+### 🎬 Live TV
+Watch the current channel on your phone:
+1. Open **Live TV**
+2. See the current channel name and program
+3. Tap **Watch on phone** → VLC (or another player) opens
+4. Requires transcoding enabled on the box (port 8001)
+
+### 🎞️ Recordings
+Browse and play recordings from the box HDD:
+- Tap a recording to open it in VLC
+- Shows title, date, duration, description
+- Supports .mp4, .ts and playlist .m3u8/.m3u (for external streams)
 
 ### 💻 Telnet
 Terminal access to your receiver:
@@ -191,17 +256,19 @@ Full system dashboard:
 - **Tuners** with current state
 - **HDD** with capacity and free space
 - **Network interfaces** with IP and MAC
+- Current service with program details
 
 ### ⚙️ Settings
 - **Language** — Switch between IT / EN / DE / FR / ES
 - **Box Profiles** — Add `+`, delete `🗑`, switch active
 - **Connection** — IP, ports, credentials, HTTPS toggle
+- Passwords are **encrypted** with Android SecureStorage
 
 ### ❓ Guide
-Built-in guide with 10 sections explaining every feature.
+Built-in guide with 15 sections explaining every feature.
 
 ### ℹ️ About
-App info, credits, PayPal support link, GitHub repository, OpenWebif project link.
+App info, version, credits, PayPal support link, GitHub repository, OpenWebif project link.
 
 ---
 
@@ -287,3 +354,4 @@ Enigma2 and OpenWebif are trademarks of their respective owners. This app is not
 ---
 
 *Made with ❤️ for the Enigma2 community*
+```
