@@ -73,15 +73,19 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ### 🏠 Home & Navigation
 
-| Home (1) | Home (2) | Home (3) |
+| Home (1) | Home (2) |
 |:---:|:---:|:---:|
-| <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> | <img src="Screen/home3.png" height="380"/> |
+| <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> |
 
 ### 📺 Content
 
-| Bouquet | Channels | EPG |
+| Bouquet | Channels | Info Channel |
 |:---:|:---:|:---:|
-| <img src="Screen/bouquet.png" height="380"/> | <img src="Screen/channels.png" height="380"/> | <img src="Screen/epg.png" height="380"/> |
+| <img src="Screen/bouquet.png" height="380"/> | <img src="Screen/channels.png" height="380"/> | <img src="Screen/infochannel" height="380"/> |
+
+| Audio & Subt | EPG | Settings |
+|:---:|:---:|:---:|
+| <img src="Screen/audioSubt.png" height="380"/> | <img src="Screen/epg.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
 
 | Search | Live TV | Recordings |
 |:---:|:---:|:---:|
@@ -109,13 +113,13 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ### ℹ️ Info & Settings
 
-| Box Info (1) | Box Info (2) | Settings |
+| Box Info (1) | Box Info (2) | Guide |
 |:---:|:---:|:---:|
-| <img src="Screen/boxinfo.png" height="380"/> | <img src="Screen/boxinfo2.png" height="380"/> | <img src="Screen/settings.png" height="380"/> |
+| <img src="Screen/boxinfo.png" height="380"/> | <img src="Screen/boxinfo2.png" height="380"/> | <img src="Screen/guida.png" height="380"/> |
 
-| Guide | About |
-|:---:|:---:|
-| <img src="Screen/guida.png" height="380"/> | <img src="Screen/about.png" height="380"/> |
+| About |
+|:---:|
+| <img src="Screen/about.png" height="380"/> |
 
 ---
 
