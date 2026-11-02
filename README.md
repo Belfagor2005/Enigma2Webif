@@ -74,14 +74,14 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 ### 🏠 Home & Navigation
 
 | Home (1) | Home (2) |
-|:---:|:---:|:---:|
+|:---:|:---:|
 | <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> |
 
 ### 📺 Content
 
 | Bouquet | Channels | Info Channel |
 |:---:|:---:|:---:|
-| <img src="Screen/bouquet.png" height="380"/> | <img src="Screen/channels.png" height="380"/> | <img src="Screen/infochannel" height="380"/> |
+| <img src="Screen/bouquet.png" height="380"/> | <img src="Screen/channels.png" height="380"/> | <img src="Screen/infochannel.png" height="380"/> |
 
 | Audio & Subt | EPG | Settings |
 |:---:|:---:|:---:|
