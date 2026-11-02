@@ -73,9 +73,9 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ### 🏠 Home & Navigation
 
-| Home (1) | Home (2) |
+| Home (1) | Home (2) | Home (3)
 |:---:|:---:|
-| <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> |
+| <img src="Screen/home1.png" height="380"/> | <img src="Screen/home2.png" height="380"/> | <img src="Screen/home3.png" height="380"/> |
 
 ### 📺 Content
 
