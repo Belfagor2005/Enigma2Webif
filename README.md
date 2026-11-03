@@ -97,6 +97,11 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 |:---:|:---:|:---:|
 | <img src="Screen/remote.png" height="380"/> | <img src="Screen/powermenu.png" height="380"/> | <img src="Screen/sleeptimers.png" height="380"/> |
 
+| Remote Settings | Remote Choice |
+|:---:|:---:|
+| <img src="Screen/remotesetting.png" height="380"/> | <img src="Screen/remotesetting2.png" height="380"/> |
+
+
 | Timers (1) | Timers (2) | OSD Message |
 |:---:|:---:|:---:|
 | <img src="Screen/timers1.png" height="380"/> | <img src="Screen/timers2.png" height="380"/> | <img src="Screen/osdmessage.png" height="380"/> |
