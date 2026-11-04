@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.2.0-orange)
+![Version](https://img.shields.io/badge/Version-1.3.0-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -29,9 +29,10 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 ## ✨ Features
 
 ### 🎛️ Control
-- **Multi-Box** — Save multiple receiver profiles with encrypted passwords (SecureStorage)
-- **Full Virtual Remote** — Arrow keys, OK, Menu, Info, EPG, Exit, colored buttons, numbers, playback, TV/Radio/Audio/Video. Uses correct RC codes (Record=167, Radio=385, etc.)
-- **Remote Configurator** — Customize Short/Long press actions for every key (e.g., Long STOP to open PVR). Supports `type=long` API.
+- **Multi-Box** — Save multiple receiver profiles with encrypted passwords (SecureStorage).
+- **Physical Layout Remote** — A completely redesigned, scroll-free virtual remote that mirrors a real Enigma2 remote.
+- **Short/Long Press** — Native support for `type=long` API. Hold any key to trigger Enigma2's native long-press actions (just like DreamDroid).
+- **Button Setup** — Assign native Enigma2 actions (plugins, scripts, menus) directly to hardware keys. The app writes to `/etc/enigma2/settings` and reboots Enigma2.
 - **Text Input** — Send free text to the box (useful for YouTube/Netflix searches).
 - **Power Menu** — Standby, Deep Standby, Reboot, Restart Enigma2, Wake Up, **Wake on LAN**.
 - **Power Timer** — Schedule box power on/off.
@@ -41,7 +42,8 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 - **Advanced Signal Finder** — Live JSON graph (SNR/AGC/BER) + Audio Metal Detector beep.
 - **Parental Control** — PIN-protected channels & bouquets.
 
-### 📺 Content
+### 📺 Content & Editing
+- **Bouquet Editor** — Create, delete, and rename bouquets. Move, rename, add, or remove channels. Add markers (separators) to organize your lists. All synced instantly with the box.
 - **Bouquets & Channels** — Lazy Loading, Picon support, EPG Now, and a **Now/Next guide** per bouquet.
 - **EPG Guide** — Full guide with Event Details Page, "Find Similar Programs", and REC button.
 - **Export** — Export bouquets as M3U or XSPF via Swipe.
@@ -63,7 +65,7 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 - **5 Languages** — Italian, English, German, French, Spanish (live switch).
 - **Daily Support Prompt** — A daily, dismissible prompt asking for a coffee donation (can be permanently disabled).
 - **Dark Theme** — Forced dark mode with modern gradient UI.
-- **Integrated Guide** — 25+ sections explaining every feature.
+- **Integrated Guide** — 30+ sections explaining every feature.
 
 ---
 
@@ -78,7 +80,9 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ## 📖 User Guide (Highlights)
 
-- **Remote Control**: Long-press keys (like STOP or REC) to open advanced menus (configured via Remote Settings).
+- **New Remote**: The remote now mimics a physical Enigma2 remote. Hold a key for 0.5s to send a `type=long` command.
+- **Button Setup**: Go to Settings -> Configure Box Keys to map scripts or plugins to specific buttons.
+- **Bouquet Editor**: Swipe left on a bouquet in the Bouquet tab to Edit, Rename, or Delete it. Inside the editor, use the arrows to move channels or add markers.
 - **Signal Finder**: Activate the "Beep Audio" toggle to align your dish like a metal detector. The frequency increases with the SNR.
 - **Advanced Recordings**: Swipe left on a recording to Copy, Add Tag, or Remove Tag. Manage recording folders (Locations) via the top menu.
 - **Now on TV**: Click the 🕒 icon in the Channels list to see what's playing on all channels in that bouquet.
@@ -109,3 +113,4 @@ GNU General Public License v3.0.
 ---
 
 *Made with ❤️ for the Enigma2 community*
+```
