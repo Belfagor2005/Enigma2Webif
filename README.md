@@ -47,13 +47,13 @@
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/powermenu.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/sleeptimers.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/signalmeter.png" height="380"/> |
 
-| OSD Message | Parental Control | Timers (1) |
+| OSD Message | Parental Control | Mediaplayer |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/osdmessage.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/parentalcontrol.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/osdmessage.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/parentalcontrol.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/mediaplayer.png" height="380"/> |
 
-| Timers (2) |
-|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
+| Bouquet Edit | Timers (1) | Timers (2) |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/>|<img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
 
 ### 🛠️ Tools & Info
 | Screenshot | Telnet | FTP |
