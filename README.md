@@ -53,7 +53,7 @@
 
 | Bouquet Edit | Timers (1) | Timers (2) |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/>|<img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
 
 ### 🛠️ Tools & Info
 | Screenshot | Telnet | FTP |
@@ -108,8 +108,9 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 - **FTP** — Browse, download, upload files.
 - **Box Info** — Firmware, kernel, chipset, tuners, HDD, network, RAM.
 
-### 🎬 Streaming
+### 🎬 Streaming & Media
 - **Live TV** — Watch the current channel via VLC (transcoded stream on port 8001).
+- **Media Player** — Browse your box HDD via FTP and play media files directly on your TV or phone.
 - **Advanced Recordings** — Full Movie List across all locations, Rename, Delete, Move, Copy, and **Tag management**.
 
 ### 🌍 Experience
@@ -138,6 +139,7 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 - **Advanced Recordings**: Swipe left on a recording to Copy, Add Tag, or Remove Tag. Manage recording folders (Locations) via the top menu.
 - **Now on TV**: Click the 🕒 icon in the Channels list to see what's playing on all channels in that bouquet.
 - **Power Timer & CEC**: Schedule wake-ups or use "Power on without TV" to avoid waking the TV via HDMI-CEC.
+- **Media Player**: Go to Media Player, enter the folder path (e.g., `/media/hdd/movie`), and press 📂. Use 📺 to play on TV or 📱 to play on your phone.
 
 ---
 
