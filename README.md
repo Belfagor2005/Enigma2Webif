@@ -25,14 +25,22 @@
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home3.png" height="380"/> |
 
-### 📺 Content & EPG
-| Bouquet | Channels | EPG |
-|:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epg.png" height="380"/> |
 
-| Channel Info | Search | Live TV |
+### 📺 Content & EPG
+| Bouquet |  Bouquet Editor | Bouquet Editor |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/infochannel.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/search.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit2.png" height="380"/> |
+
+
+| Channel | Channels Preview | Channel Info |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channelspreview.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/infochannel.png" height="380"/> |
+
+
+| EPG | EPG Grid | Search |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epg.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epggrid.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/search.png" height="380"/> |
+
 
 | Audio & Subtitles | Recordings | Settings |
 |:---:|:---:|:---:|
@@ -51,22 +59,22 @@
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/osdmessage.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/parentalcontrol.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/mediaplayer.png" height="380"/> |
 
-| Bouquet Edit | Timers (1) | Timers (2) |
+| Live TV | Timers (1) | Timers (2) |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> | 
 
 ### 🛠️ Tools & Info
 | Screenshot | Telnet | FTP |
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
 
-| Box Info (1) | Box Info (2) | Guide |
+| Box Info (1) | Box Info (2) | Plugin Manager |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/guida.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/pluginmanager.png" height="380"/> |
 
-| About | | |
+| Guide | About | |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/about.png" height="380"/> | | |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/guida.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/about.png" height="380"/> | |
 
 ---
 
