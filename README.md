@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.3.0-orange)
+![Version](https://img.shields.io/badge/Version-1.4.0-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -68,6 +68,7 @@
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/about.png" height="380"/> | | |
 
+---
 
 ## 📱 About
 
@@ -82,40 +83,42 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 ### 🎛️ Control
 - **Multi-Box** — Save multiple receiver profiles with encrypted passwords (SecureStorage).
 - **Physical Layout Remote** — A completely redesigned, scroll-free virtual remote that mirrors a real Enigma2 remote.
-- **Short/Long Press** — Native support for `type=long` API. Hold any key to trigger Enigma2's native long-press actions (just like DreamDroid).
-- **Button Setup** — Assign native Enigma2 actions (plugins, scripts, menus) directly to hardware keys. The app writes to `/etc/enigma2/settings` and reboots Enigma2.
+- **Short/Long Press** — Native support for `type=long` API. Hold any key to trigger Enigma2's native long-press actions.
+- **Button Setup** — Assign native Enigma2 actions (plugins, scripts, menus) directly to hardware keys.
 - **Text Input** — Send free text to the box (useful for YouTube/Netflix searches).
-- **Power Menu** — Standby, Deep Standby, Reboot, Restart Enigma2, Wake Up, **Wake on LAN**.
-- **Power Timer** — Schedule box power on/off.
-- **HDMI-CEC (Skip TV)** — Power on the box without turning on the TV.
+- **Power Menu** — Standby, Deep Standby, Reboot, Restart Enigma2, Wake Up, **Wake on LAN**, Power Timer, **HDMI-CEC (Skip TV)**.
 - **Sleep Timer** — Programmed shutdown with configurable delay (native API).
 - **OSD Messages** — Send popup messages to the TV screen.
 - **Advanced Signal Finder** — Live JSON graph (SNR/AGC/BER) + Audio Metal Detector beep.
 - **Parental Control** — PIN-protected channels & bouquets.
 
 ### 📺 Content & Editing
-- **Bouquet Editor** — Create, delete, and rename bouquets. Move, rename, add, or remove channels. Add markers (separators) to organize your lists. All synced instantly with the box.
+- **EPG Grid (Palimpsest)** — A 2D TV guide with channels on the left and time on top. Scrolls horizontally with colored events (Live, Future, Past). Clickable events to show details.
+- **Plugin Manager** — Browse all installed plugins via FTP. Dedicated editors for AutoTimer and EPGRefresh. Other plugins show a quick info popup.
+- **AutoTimer Editor** — Read, edit, enable/disable, and delete AutoTimer rules directly from the app by modifying `/etc/enigma2/autotimer.xml`.
+- **EPGRefresh** — Trigger a manual EPG refresh on the box.
+- **Bouquet Editor** — Create, delete, and rename bouquets. Move, rename, add, or remove channels. Add markers.
 - **Bouquets & Channels** — Lazy Loading, Picon support, EPG Now, and a **Now/Next guide** per bouquet.
-- **EPG Guide** — Full guide with Event Details Page, "Find Similar Programs", and REC button.
+- **EPG Guide** — Full guide with Event Details Page, "Find Similar Programs", and REC button. Includes day of the week and a timer icon for scheduled events.
 - **Export** — Export bouquets as M3U or XSPF via Swipe.
-- **Audio & Subtitles** — Real-time track switching. Subservices support (multistream).
-- **Global Search** — Search channels and programs simultaneously.
+- **Audio & Subtitles** — Real-time track switching. Subservices support.
+- **Global Search** — Search channels and programs simultaneously. Now correctly loads all bouquets in parallel.
 - **Timers** — Advanced creation and editing (justplay, tags, target folder, always zap, allow duplicate).
 
 ### 🛠️ Tools
-- **Screenshot** — Capture the box screen in real time.
+- **Advanced Screenshot** — Capture modes (All/Video/OSD), formats (JPG/PNG), custom resolutions, and auto-save with the channel name.
 - **Telnet** — Direct terminal with quick commands.
 - **FTP** — Browse, download, upload files.
 - **Box Info** — Firmware, kernel, chipset, tuners, HDD, network, RAM.
 
 ### 🎬 Streaming & Media
-- **Live TV** — Watch the current channel via VLC (transcoded stream on port 8001).
-- **Media Player** — Browse your box HDD via FTP and play media files directly on your TV or phone.
+- **Live TV** — Watch the current channel via VLC (transcoded stream on port 8001) with quality profiles.
+- **Media Player** — Browse your box HDD via FTP and play media files directly on your TV (`zap` command) or on your phone (VLC).
 - **Advanced Recordings** — Full Movie List across all locations, Rename, Delete, Move, Copy, and **Tag management**.
 
 ### 🌍 Experience
 - **5 Languages** — Italian, English, German, French, Spanish (live switch).
-- **Daily Support Prompt** — A daily, dismissible prompt asking for a coffee donation (can be permanently disabled).
+- **Daily Support Prompt** — A daily, dismissible prompt asking for a coffee donation.
 - **Dark Theme** — Forced dark mode with modern gradient UI.
 - **Integrated Guide** — 30+ sections explaining every feature.
 
@@ -132,14 +135,11 @@ Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ## 📖 User Guide (Highlights)
 
-- **New Remote**: The remote now mimics a physical Enigma2 remote. Hold a key for 0.5s to send a `type=long` command.
-- **Button Setup**: Go to Settings -> Configure Box Keys to map scripts or plugins to specific buttons.
-- **Bouquet Editor**: Swipe left on a bouquet in the Bouquet tab to Edit, Rename, or Delete it. Inside the editor, use the arrows to move channels or add markers.
-- **Signal Finder**: Activate the "Beep Audio" toggle to align your dish like a metal detector. The frequency increases with the SNR.
-- **Advanced Recordings**: Swipe left on a recording to Copy, Add Tag, or Remove Tag. Manage recording folders (Locations) via the top menu.
-- **Now on TV**: Click the 🕒 icon in the Channels list to see what's playing on all channels in that bouquet.
-- **Power Timer & CEC**: Schedule wake-ups or use "Power on without TV" to avoid waking the TV via HDMI-CEC.
-- **Media Player**: Go to Media Player, enter the folder path (e.g., `/media/hdd/movie`), and press 📂. Use 📺 to play on TV or 📱 to play on your phone.
+- **EPG Grid**: Open from Home, Bouquet list, or Channel list. Scroll horizontally to see the timeline and vertically to see channels.
+- **Plugin Manager**: Go to Home -> Plugin. View installed plugins and manage AutoTimer rules or trigger EPGRefresh.
+- **New Remote**: Hold a key for 0.5s to send a `type=long` command.
+- **Bouquet Editor**: Swipe left on a bouquet to Edit, Rename, or Delete.
+- **Media Player**: Enter the folder path and press 📂. Use 📺 to play on TV or 📱 to play on your phone.
 
 ---
 
@@ -166,4 +166,3 @@ GNU General Public License v3.0.
 ---
 
 *Made with ❤️ for the Enigma2 community*
-```
