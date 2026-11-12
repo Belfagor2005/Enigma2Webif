@@ -2,10 +2,10 @@
 
 > Android app to control your Enigma2 satellite receiver remotely — a modern mobile client for OpenWebif.
 
-![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.6.0-orange)
+![Version](https://img.shields.io/badge/Version-1.7.0-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -52,53 +52,50 @@
 
 ## 📱 About
 
-**Enigma2Webif** is a native Android application that brings the power of [OpenWebif](https://github.com/oe-alliance/OpenWebif) to your smartphone. Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many more) with a modern, clean and fast interface.
+**Enigma2Webif** is a native Android application that brings the power of [OpenWebif](https://github.com/oe-alliance/OpenWebif) to your smartphone and Android TV. Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many more) with a modern, clean and fast interface.
 
 Built with **.NET MAUI 10** for maximum performance and native look-and-feel.
 
 ---
 
-## ✨ Features (v1.6.0)
+## ✨ Features (v1.7.0)
 
 ### 🎬 Media & Streaming
 - **Built-in Video Player** — Watch channels directly in the app. Includes **Picture-in-Picture** support and **Background Media Session** (Android native Play/Pause notification).
+- **Watchdog Protection** — If you close the app while playing a media file on the box, the app will ask you to restore the TV channel on the next launch.
 - **Local Download** — Download recordings from the box HDD to your phone via FTP, with a live progress bar.
 - **Live TV** — Transcoding profiles (Low/Medium/High/HD), Subservices support.
-- **Media Player** — Browse HDD via FTP, play on TV (`zap`) or on phone.
-- **Unified Recordings** — A single page with full movie list, tags, locations, rename, move, copy, delete, download. **Multi-Select** mode for batch operations.
+- **Unified Recordings** — Single page with movie list, tags, locations, rename, move, copy, delete, download. **Multi-Select** mode for batch operations.
 - **Audio & Subtitles** — Real-time track switching.
 
-### 🎛️ Control
+### 🎛️ Control & Automation
 - **Advanced Remote** — Physical layout, short/long press, haptic feedback (vibration).
-- **Button Setup** — Assign native Enigma2 actions to hardware keys.
+- **Button Setup** — Assign native Enigma2 actions to hardware keys (including IMDb Search).
+- **Manual Timer Creation** — Create recordings from scratch (like the Webif browser). Select channel (with search bar), time, destination folder, and options.
 - **Power Menu** — Standby, Deep Standby, Reboot, Restart, Wake Up, WOL, Power Timer, HDMI-CEC.
-- **Sleep Timer** — Programmed shutdown.
 - **OSD Messages** — Popup to TV.
 - **Signal Finder** — SNR/AGC/BER graph + audio beep (with OpenATV AGC estimation fix).
 - **Parental Control** — PIN-protected channels.
 
 ### 📺 Content & Editing
+- **Softcam Integration** — New page to open OSCam and CCcam web interfaces (configurable ports).
 - **Edit Mode (Bouquets & Channels)** — New dedicated "Edit" button in the header. Reorder (Up/Down), Rename, or Delete items without cluttering the swipe menu.
 - **EPG Grid (Palimpsest)** — 2D guide with JSON cache (5 min).
 - **Plugin Manager** — FTP scan + AutoTimer and EPGRefresh editors.
 - **Global Search** — Channels + Programs in parallel with **Advanced Filters** (Movies, Sports, News). **Voice search** via native Android microphone.
 - **Export** — **M3U** (IPTV only) saved locally and shared natively, or XSPF.
 
-### ⏰ Automation
-- **Timer Notifications** — Get a push notification before a timer starts and **when it ends/fails**.
-- **Home Assistant Webhook** — Send events to your domotics system when you change channel or start a recording. Includes a test link in Settings (`webhook.site`).
-- **Widget Home Screen** — Shows current channel and EPG description on your home screen.
-
 ### 🛠️ Tools & System
+- **Android TV Support** — The APK is officially compatible with Leanback (TVs and TV Boxes).
+- **Screenshot 4K** — Capture in Native/UHD/WQHD resolutions with 60s timeout and native Android share menu.
 - **In-App Update Checker** — Automatic check via GitHub API on startup (3s delay) and manual check in Settings.
 - **Backup & Restore** — Export/Import all settings (boxes, remote keys, parental list) to a JSON file.
 - **Local Cache (SQLite)** — Channels and EPG saved locally. App opens instantly even when the box is offline.
-- **Screenshot** — Modes (All/Video/OSD), formats (JPG/PNG), resolutions.
 - **Telnet, FTP, Box Info, System Info**.
 
 ### 🎨 Experience
+- **Responsive Layout** — Home grid automatically adapts to 3 or 4 columns on Tablets and Foldables.
 - **Light / Dark Theme** — Follow system or manual choice.
-- **Haptic Feedback** — Remote keys vibrate on press.
 - **5 Languages** — IT, EN, DE, FR, ES (100% translated, no hardcoded strings).
 - **Integrated Guide** — 43 sections covering every feature.
 
