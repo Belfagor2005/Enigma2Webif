@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.8.0-orange)
+![Version](https://img.shields.io/badge/Version-1.8.2-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -26,7 +26,7 @@ Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many mo
 
 ---
 
-## ✨ EVERYTHING THE APP CAN DO (v1.8.0)
+## ✨ EVERYTHING THE APP CAN DO (v1.8.2)
 
 Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
@@ -40,13 +40,14 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Maintenance Dashboard**: Real-time monitoring of RAM, Disk, and CPU Temperature with Gauge animations. Includes "RAM Boost" (drop_caches), GUI Restart, Box Reboot, and Standby actions directly from the app (with Telnet/HTTP fallback).
 
 ### 📺 Channels, Bouquets & EPG
-- **Bouquet List**: Browse all your satellite and IPTV bouquets with lazy loading.
-- **Channel List**: View channels with Picons (logos), EPG Now, and active timer indicators.
+- **Bouquet List**: Browse all your satellite and IPTV bouquets with lazy loading and local caching.
+- **Channel List**: View channels with **smart in-memory cache** (5 min) to avoid reloading from the box every time. Includes a manual "Force Refresh" button.
 - **Lightning Search**: A fixed search bar at the top of the Channels list to instantly filter channels without lagging the UI (debounced).
 - **Edit Mode**: Toggle Edit Mode to Reorder (Up/Down), Rename, or Delete bouquets and channels directly from the app.
 - **Bouquet Editor**: Create/Delete bouquets, add markers, move channels between folders.
 - **EPG Grid (Palimpsest)**: A 2D scrollable TV guide spanning 12 hours, with synchronized horizontal and vertical scrolling.
-- **EPG Details**: View full program descriptions, live progress bars, and start times.
+- **EPG Details**: View full program descriptions, live progress bars, start times, and the **day of the week** (e.g. MON, TUE).
+- **Timer Feedback**: Programs with an active timer now show a **clock icon (⏰)** directly in the EPG list and Channel list.
 - **Find Similar**: Discover similar programs based on the current event.
 - **Global Search**: Search for both Channels and Programs simultaneously.
 - **Advanced Search Filters**: Filter program results by Movies, Sports, or News.
@@ -54,10 +55,11 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Picons Support**: Automatically loads channel logos from the box.
 
 ### 🎬 Streaming, Media & Recordings
-- **Built-in Video Player**: Watch TV directly in the app with Transcoding profiles (Low/Medium/High/HD).
-- **Picture-in-Picture (PiP)**: Shrink the player into a floating window when you press the Home button.
+- **New Media Engine (Shiny)**: Replaced the default MAUI MediaElement with **Shiny.Maui.Controls.MediaElement** for rock-solid stability and PiP support.
+- **True Picture-in-Picture (PiP)**: The video player now correctly enters PiP mode, showing the actual TV stream in a floating window (no more black boxes or app-in-miniature). The App hides the Navigation Bar automatically for a true fullscreen experience.
+- **Built-in Video Player**: Watch TV directly in the app with Transcoding profiles. The "Low" profile is now the default to guarantee immediate audio and video compatibility.
 - **Mini Player in Home**: A small, persistent video widget on the Home screen to keep an eye on the current channel while browsing the app.
-- **Listen Mode (Headphones)**: Route the TV audio directly to your phone's headphones (or Bluetooth) without muting the TV sound for others in the room.
+- **Listen Mode (Headphones)**: Route the TV audio directly to your phone's headphones (or Bluetooth) without muting the TV sound for others in the room. Fixed the double-audio bug when exiting.
 - **Background Media Session**: Native Android Play/Pause/Stop controls in the notification tray while playing in the background.
 - **Media Player Watchdog**: If the app is closed during playback, it asks to restore the TV channel on next launch.
 - **Audio & Subtitles**: Change audio tracks and subtitles in real-time during Live TV.
@@ -82,6 +84,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 ### ⏰ Timers & Advanced Tools
 - **Manual Timer Creation**: Create recordings from scratch (like the Webif browser). Search for a channel, set dates, times, destination folder, and advanced options (Just Play, Always Zap, PiP Zap).
 - **EPG Timer Creation**: Create a timer with one tap directly from the EPG.
+- **Duplicate Timer Prevention**: If a timer already exists for an event, clicking the REC button will now ask if you want to delete the existing timer instead of creating a duplicate.
 - **Timer Notifications**: Push notifications 2 minutes before a timer starts and 1 minute before it ends/fails.
 - **Softcam Integration**: Quick access to open OSCam and CCcam web interfaces (with editable ports).
 - **Telnet Client**: Auto-login terminal with quick command buttons (reboot, df -h, free, etc.).
@@ -92,48 +95,16 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Plugin Manager**: Scan installed plugins via FTP and edit AutoTimer and EPGRefresh configurations.
 
 ### 📱 Integrations & UI
-- **Customizable Home**: Hide/Show, reorder, and restore default tiles. Your layout is saved locally.
+- **Customizable Home**: Hide/Show, reorder, and restore default tiles. Your layout is saved locally and applies instantly.
 - **Parental Control**: PIN-protect specific channels and bouquets.
 - **Home Assistant Webhook**: Send JSON events to your smart home when you change channels or start recordings.
-- **Home Screen Widget**: Displays current channel and EPG description. Tap to open the app.
+- **Home Screen Widget**: Displays current channel and EPG description. Tap to open the app. (Fixed empty state with fallback text).
 - **Android TV Support**: Officially compatible with Android TV and Leanback (remote and mouse friendly).
 - **Responsive Layout**: Home grid automatically scales to 3 or 4 columns on Tablets and Foldables.
 - **Light / Dark Theme**: Follow system settings or choose manually.
 - **5 Languages**: 100% translated in Italian, English, German, French, and Spanish (no hardcoded strings).
 - **Integrated Guide**: A fully translated 44-section manual explaining every single feature.
 - **Crash Reporting**: Sentry integrated (Release only) for stability tracking.
-
----
-
-## 📸 Screenshots
-
-### 🏠 Home & Navigation
-| Home (1) | Home (2) | Home (3) |
-|:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home3.png" height="380"/> |
-
-### 📺 Content & EPG
-| Bouquet | Bouquet Editor | EPG Grid |
-|:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epggrid.png" height="380"/> |
-
-### 🎛️ Control & Remote
-| Remote | Live TV |
-|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remote.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> |
-
-| Timers | Registrazioni |
-|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/recordings.png" height="380"/> |
-
-### 🛠️ Tools & Info
-| Screenshot | Telnet | FTP |
-|:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
-
-| Settings (Tema + Backup) | 
-|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/settings.png" height="380"/> |
 
 ---
 
