@@ -108,6 +108,38 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home & Navigation
+| Home (1) | Home (2) | Home (3) |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home3.png" height="380"/> |
+
+### 📺 Content & EPG
+| Bouquet | Bouquet Editor | EPG Grid |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epggrid.png" height="380"/> |
+
+### 🎛️ Control & Remote
+| Remote | Live TV |
+|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remote.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> |
+
+| Timers | Registrazioni |
+|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/recordings.png" height="380"/> |
+
+### 🛠️ Tools & Info
+| Screenshot | Telnet | FTP |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
+
+| Settings (Tema + Backup) | 
+|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/settings.png" height="380"/> |
+
+---
+
 ## 🚀 Installation
 
 1. Download the latest APK from the **Releases** section.
