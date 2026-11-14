@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.7.0-orange)
+![Version](https://img.shields.io/badge/Version-1.8.0-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -26,7 +26,7 @@ Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many mo
 
 ---
 
-## ✨ EVERYTHING THE APP CAN DO (v1.7.0)
+## ✨ EVERYTHING THE APP CAN DO (v1.8.0)
 
 Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
@@ -37,10 +37,12 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Connection Status**: Live banner showing online/offline status and current channel.
 - **Backup & Restore**: Export/Import all profiles, remote mappings, and parental settings to a JSON file.
 - **In-App Updates**: Automatic check for new GitHub releases on startup and manual check in Settings.
+- **Maintenance Dashboard**: Real-time monitoring of RAM, Disk, and CPU Temperature with Gauge animations. Includes "RAM Boost" (drop_caches), GUI Restart, Box Reboot, and Standby actions directly from the app (with Telnet/HTTP fallback).
 
 ### 📺 Channels, Bouquets & EPG
 - **Bouquet List**: Browse all your satellite and IPTV bouquets with lazy loading.
 - **Channel List**: View channels with Picons (logos), EPG Now, and active timer indicators.
+- **Lightning Search**: A fixed search bar at the top of the Channels list to instantly filter channels without lagging the UI (debounced).
 - **Edit Mode**: Toggle Edit Mode to Reorder (Up/Down), Rename, or Delete bouquets and channels directly from the app.
 - **Bouquet Editor**: Create/Delete bouquets, add markers, move channels between folders.
 - **EPG Grid (Palimpsest)**: A 2D scrollable TV guide spanning 12 hours, with synchronized horizontal and vertical scrolling.
@@ -54,6 +56,8 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 ### 🎬 Streaming, Media & Recordings
 - **Built-in Video Player**: Watch TV directly in the app with Transcoding profiles (Low/Medium/High/HD).
 - **Picture-in-Picture (PiP)**: Shrink the player into a floating window when you press the Home button.
+- **Mini Player in Home**: A small, persistent video widget on the Home screen to keep an eye on the current channel while browsing the app.
+- **Listen Mode (Headphones)**: Route the TV audio directly to your phone's headphones (or Bluetooth) without muting the TV sound for others in the room.
 - **Background Media Session**: Native Android Play/Pause/Stop controls in the notification tray while playing in the background.
 - **Media Player Watchdog**: If the app is closed during playback, it asks to restore the TV channel on next launch.
 - **Audio & Subtitles**: Change audio tracks and subtitles in real-time during Live TV.
@@ -73,7 +77,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Sleep Timer**: Set a countdown to automatically put the box in standby.
 - **OSD Messages**: Send popup messages directly to your TV screen (Info, Warning, Error).
 - **OSD Questions**: Send a Yes/No question to the TV and get the answer on your phone.
-- **Signal Finder**: Real-time SNR/AGC/BER graph with customizable audio beep (includes OpenATV AGC estimation fix).
+- **Signal Finder**: A beautiful **Circular Gauge** (3 concentric rings for SNR, AGC, BER) with smooth 60fps animations. Includes the OpenATV AGC estimation fix and a real-time audio beeper. SNR/AGC bars are also shown directly in the Live TV page.
 
 ### ⏰ Timers & Advanced Tools
 - **Manual Timer Creation**: Create recordings from scratch (like the Webif browser). Search for a channel, set dates, times, destination folder, and advanced options (Just Play, Always Zap, PiP Zap).
@@ -88,6 +92,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Plugin Manager**: Scan installed plugins via FTP and edit AutoTimer and EPGRefresh configurations.
 
 ### 📱 Integrations & UI
+- **Customizable Home**: Hide/Show, reorder, and restore default tiles. Your layout is saved locally.
 - **Parental Control**: PIN-protect specific channels and bouquets.
 - **Home Assistant Webhook**: Send JSON events to your smart home when you change channels or start recordings.
 - **Home Screen Widget**: Displays current channel and EPG description. Tap to open the app.
@@ -95,7 +100,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Responsive Layout**: Home grid automatically scales to 3 or 4 columns on Tablets and Foldables.
 - **Light / Dark Theme**: Follow system settings or choose manually.
 - **5 Languages**: 100% translated in Italian, English, German, French, and Spanish (no hardcoded strings).
-- **Integrated Guide**: A fully translated 43-section manual explaining every single feature.
+- **Integrated Guide**: A fully translated 44-section manual explaining every single feature.
 - **Crash Reporting**: Sentry integrated (Release only) for stability tracking.
 
 ---
