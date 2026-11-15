@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.8.2-orange)
+![Version](https://img.shields.io/badge/Version-1.8.3-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -26,7 +26,7 @@ Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many mo
 
 ---
 
-## ✨ EVERYTHING THE APP CAN DO (v1.8.2)
+## ✨ EVERYTHING THE APP CAN DO (v1.8.3)
 
 Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
@@ -56,7 +56,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
 ### 🎬 Streaming, Media & Recordings
 - **New Media Engine (Shiny)**: Replaced the default MAUI MediaElement with **Shiny.Maui.Controls.MediaElement** for rock-solid stability and PiP support.
-- **True Picture-in-Picture (PiP)**: The video player now correctly enters PiP mode, showing the actual TV stream in a floating window (no more black boxes or app-in-miniature). The App hides the Navigation Bar automatically for a true fullscreen experience.
+- **True Picture-in-Picture (PiP)**: The video player now correctly enters PiP mode, showing the actual TV stream in a floating window. The App hides the Navigation Bar automatically for a true fullscreen experience.
 - **Built-in Video Player**: Watch TV directly in the app with Transcoding profiles. The "Low" profile is now the default to guarantee immediate audio and video compatibility.
 - **Mini Player in Home**: A small, persistent video widget on the Home screen to keep an eye on the current channel while browsing the app.
 - **Listen Mode (Headphones)**: Route the TV audio directly to your phone's headphones (or Bluetooth) without muting the TV sound for others in the room. Fixed the double-audio bug when exiting.
@@ -82,9 +82,11 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Signal Finder**: A beautiful **Circular Gauge** (3 concentric rings for SNR, AGC, BER) with smooth 60fps animations. Includes the OpenATV AGC estimation fix and a real-time audio beeper. SNR/AGC bars are also shown directly in the Live TV page.
 
 ### ⏰ Timers & Advanced Tools
+- **King System for Timers**: The Box is the absolute truth. No local cache, no duplicates, no glitches. The app waits for Box confirmation and updates all screens (EPG, Home, Channel List, NowOnTv) instantly.
 - **Manual Timer Creation**: Create recordings from scratch (like the Webif browser). Search for a channel, set dates, times, destination folder, and advanced options (Just Play, Always Zap, PiP Zap).
 - **EPG Timer Creation**: Create a timer with one tap directly from the EPG.
 - **Duplicate Timer Prevention**: If a timer already exists for an event, clicking the REC button will now ask if you want to delete the existing timer instead of creating a duplicate.
+- **NowOnTv Quick Actions**: Added 4 direct buttons on every card in the "Now on TV" page: Zap, Record Now, Timer for Next, and Open EPG.
 - **Timer Notifications**: Push notifications 2 minutes before a timer starts and 1 minute before it ends/fails.
 - **Softcam Integration**: Quick access to open OSCam and CCcam web interfaces (with editable ports).
 - **Telnet Client**: Auto-login terminal with quick command buttons (reboot, df -h, free, etc.).
@@ -103,7 +105,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Responsive Layout**: Home grid automatically scales to 3 or 4 columns on Tablets and Foldables.
 - **Light / Dark Theme**: Follow system settings or choose manually.
 - **5 Languages**: 100% translated in Italian, English, German, French, and Spanish (no hardcoded strings).
-- **Integrated Guide**: A fully translated 44-section manual explaining every single feature.
+- **Integrated Guide**: A fully translated 45-section manual explaining every single feature.
 - **Crash Reporting**: Sentry integrated (Release only) for stability tracking.
 
 ---
