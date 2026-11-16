@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.8.3-orange)
+![Version](https://img.shields.io/badge/Version-1.8.4-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -26,7 +26,7 @@ Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many mo
 
 ---
 
-## ✨ EVERYTHING THE APP CAN DO (v1.8.3)
+## ✨ EVERYTHING THE APP CAN DO (v1.8.4)
 
 Here is the complete, exhaustive list of all features included in Enigma2Webif:
 
@@ -58,7 +58,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **New Media Engine (Shiny)**: Replaced the default MAUI MediaElement with **Shiny.Maui.Controls.MediaElement** for rock-solid stability and PiP support.
 - **True Picture-in-Picture (PiP)**: The video player now correctly enters PiP mode, showing the actual TV stream in a floating window. The App hides the Navigation Bar automatically for a true fullscreen experience.
 - **Built-in Video Player**: Watch TV directly in the app with Transcoding profiles. The "Low" profile is now the default to guarantee immediate audio and video compatibility.
-- **Mini Player in Home**: A small, persistent video widget on the Home screen to keep an eye on the current channel while browsing the app.
+- **Home Mini Player (Stable)**: A small, persistent video widget on the Home screen to keep an eye on the current channel while browsing the app. It seamlessly scrolls with the page and pushes content down without overlapping.
 - **Listen Mode (Headphones)**: Route the TV audio directly to your phone's headphones (or Bluetooth) without muting the TV sound for others in the room. Fixed the double-audio bug when exiting.
 - **Background Media Session**: Native Android Play/Pause/Stop controls in the notification tray while playing in the background.
 - **Media Player Watchdog**: If the app is closed during playback, it asks to restore the TV channel on next launch.
@@ -69,6 +69,7 @@ Here is the complete, exhaustive list of all features included in Enigma2Webif:
 - **Multi-Select**: Long-press to select multiple recordings and delete or download them in batch.
 - **Download to Phone**: Download `.ts` recordings to your phone with a live progress bar.
 - **Export M3U**: Save IPTV bouquets as `.m3u` files and share them via the native Android share menu.
+- **"Source Error" Fixed**: Resolved the critical `UnrecognizedInputFormatException` that occurred when switching between the Home Mini Player and the Fullscreen Player. The app now correctly releases the tuner before opening a new stream.
 
 ### 🎛️ Remote, Power & Automation
 - **Advanced Virtual Remote**: Full physical layout with Haptic Feedback (vibration) and Short/Long press support.
