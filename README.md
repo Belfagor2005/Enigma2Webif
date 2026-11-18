@@ -136,28 +136,73 @@ Here is the complete list of the features included in Enigma2Webif:
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home2.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/home3.png" height="380"/> |
 
-### 📺 Content & EPG
-| Bouquet | Bouquet Editor | EPG Grid |
+
+### 📺 Bouquets, Channels & EPG
+| Bouquet | Bouquet Editor | Bouquet Editor (2) |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epggrid.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/bouquet_edit2.png" height="380"/> |
 
-### 🎛️ Control & Remote
-| Remote | Live TV |
+| Channels | Channels Preview | Channels List |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channelspreview.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels_list.png" height="380"/> |
+
+| Channels List Edit | Channels List EPG Now | EPG |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels_list_edit.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/channels_list_epg_now.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epg.png" height="380"/> |
+
+| EPG Grid | Event Details | Search |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/epggrid.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/event_details.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/search.png" height="380"/> |
+
+
+### 🎬 Streaming & Media
+| Live TV | Media Player | Audio & Subtitles |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/mediaplayer.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/audioSubt.png" height="380"/> |
+
+| Channel Info | Recordings |
 |:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remote.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/livetv1.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/infochannel.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/recordings.png" height="380"/> |
 
-| Timers | Recordings |
+
+### 🎛️ Remote & Control
+| Remote | Remote Settings | Remote Settings (2) |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remote.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remotesetting.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/remotesetting2.png" height="380"/> |
+
+| Power Menu | OSD Message | Sleep Timer |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/powermenu.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/osdmessage.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/sleeptimers.png" height="380"/> |
+
+
+### ⏰ Timers
+| Timers (1) | Timers (2) |
 |:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/recordings.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers1.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/timers2.png" height="380"/> |
 
-### 🛠️ Tools & Info
+
+### 🛠️ Tools
 | Screenshot | Telnet | FTP |
 |:---:|:---:|:---:|
 | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
 
-| Settings (Theme + Backup) |
+| Plugin Manager | Signal Meter | Signal Meter (2) |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/pluginmanager.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/signalmeter.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/signalmeter2.png" height="380"/> |
+
+| Maintenance | Box Info | Box Info (2) |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/maintenance.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/boxinfo2.png" height="380"/> |
+
+
+### ⚙️ Settings & Info
+| Settings (Theme + Backup) | Parental Control | Guide |
+|:---:|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/settings.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/parentalcontrol.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/guida.png" height="380"/> |
+
+| About |
 |:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/settings.png" height="380"/> |
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/about.png" height="380"/> |
 
 ---
 
