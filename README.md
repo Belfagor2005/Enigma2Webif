@@ -227,9 +227,15 @@ Here is the complete list of the features included in Enigma2Webif:
 
 
 ### 🛠️ Tools
-| Screenshot | Telnet | FTP |
-|:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
+| Screenshot | Screenshot 2 |
+|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/screenshot2.png" height="380"/> |
+
+
+| Telnet | FTP |
+|:---:|:---:|
+| <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/telnet.png" height="380"/> | <img src="https://raw.githubusercontent.com/Belfagor2005/Enigma2Webif/main/Screen/ftp.png" height="380"/> |
+
 
 | Plugin Manager | Signal Meter | Signal Meter (2) |
 |:---:|:---:|:---:|
