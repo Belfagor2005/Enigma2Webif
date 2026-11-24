@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-green)
 ![Framework](https://img.shields.io/badge/.NET%20MAUI-10.0-blueviolet)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.8.6-orange)
+![Version](https://img.shields.io/badge/Version-1.8.7-orange)
 
 <p align="center">
   <a href="https://ko-fi.com/lululla">
@@ -26,20 +26,18 @@ Control your Enigma2 decoder (Uclan, Vu+, Zgemma, Octagon, Dreambox, and many mo
 
 ---
 
-## 🆕 What's new in v1.8.6
+## 🆕 What's new in v1.8.7
 
-- 🎤 **Voice control, complete**: choose the **language you speak** (independent from the app language), a **"Voice commands" page** that always matches what the app understands, a **voice shortcut on the app icon**, and **app pages by voice** with the prefix *app* ("app timers", "app settings"…).
-- 📲 **Home-screen widgets**: **Voice** and **Remote** widgets that slide open (▶ / ◀) and work **without opening the app** — mic, volume, mute, power, CH−/CH+, pause, play.
-- 📥 **Recording downloads in the background**: notification with progress, **queue** shown under the progress bar, **skip** the current file or **cancel all**, files saved in `Download/Enigma2Webif`.
-- ⏸️ **Live pause**: the **⏭ LIVE** button in the Remote jumps back to the live picture after a pause (timeshift).
-- ⏰ **Timer overlap warning**: before you create a recording that overlaps others, the app tells you which ones.
-- 📅 **EPG Grid "Prime time"**: one tap to see what is on at 21:00 on every channel of the bouquet; a second row of buttons keeps the toolbar clean.
-- 🌍 **Remote access**: use the box away from home with a VPN or a DDNS address; the app switches by itself between local and remote.
-- 🏠 **Home card shows the channel name**: "Current channel · Rai 1", with the programme title below (also in the channel widget).
-- 🎮 **Plugin Run**: long press on OK/arrows, edge sectors in the D-Pad, per-plugin **quick keys** (with a "Defaults" button), quick-key bar on the enlarged monitor, light theme, **plugins closed when you leave** (Launcher v3).
-- 🔴 **Red power icon** for every power control of the app.
-- 🛠️ **Maintenance**: CPU temperature aligned with the box infobar, readable uptime. **Info Box** shows a picture of the box.
-- 📖 **Guide**: 12 groups in the index and direct scroll to chapters; every new feature has real examples.
+- 📸 **Screenshot page rebuilt**: choose what to capture (**All / Video only / OSD only**), the format (**JPG or PNG**) and the width, turn on **auto refresh** (every 2–60 s, it stops when you leave the page), and **save every capture** if you want.
+- 🖼️ **Saved in the Gallery** (`Pictures/Enigma2Webif`, no permission needed on Android 10+) with the **channel name in the file name**; **Share**, **Copy** to the clipboard, **OpenWebif** and a **Gallery** button that opens the latest capture.
+- 🎛️ **Full remote under the preview**: press a key and the picture refreshes by itself — handy for menus that live only on the TV screen.
+- 🔴 **One Record / Stop button in Live TV**: red "Record", orange "Stop recording" while the channel is being recorded. Stop now ends the recording of the channel you are watching.
+- ⚙️ **Settings reordered**: box profile, remote access and webhook first, with **Save** and **Test connection** right below.
+- 📖 **Guide** updated (Screenshot, Live TV) in all 5 languages.
+- 🧰 **Diagnostics**: errors that used to be ignored silently are now written to the debug log.
+- 📜 The project is released under the **GPL-3.0** license.
+
+Highlights of **v1.8.6** (voice control, widgets, background downloads, remote access, Plugin Run) are listed in the full feature list below.
 
 See the full list in the [Releases](../../releases) page.
 
@@ -71,9 +69,13 @@ Pages: *timers, recordings, settings, guide, remote, TV guide (EPG grid), signal
 
 **Remote access** — in the box settings fill *Remote access* with your DDNS address (e.g. `mybox.duckdns.org`) and forward the HTTP port (and 8001 for streaming) on your router; at home the app keeps using the local address.
 
+
+**Screenshot** — open *Screenshot*, pick *OSD* and *PNG*, press **Capture**: you get the box menu exactly as it is on the TV. **Save** puts it in the Gallery as `2026-11-24_21-30-00_Rai 1.png`. Turn on *Auto refresh* (5 s) and open **Full remote** to move through a menu on the box and watch the picture follow your keys.
+
+**Recording from Live TV** — on Rai 1 HD press **Record**: the button turns orange and reads *Stop recording*. Press it again to stop; a recording running on another channel is not touched.
 ---
 
-## ✨ EVERYTHING THE APP CAN DO (v1.8.6)
+## ✨ EVERYTHING THE APP CAN DO (v1.8.7)
 
 Here is the complete list of the features included in Enigma2Webif:
 
@@ -81,7 +83,7 @@ Here is the complete list of the features included in Enigma2Webif:
 - **Multi-Box Support**: Configure and switch between multiple decoders.
 - **Secure Storage**: Passwords are saved securely using Android SecureStorage.
 - **Port Configuration**: Customize HTTP, Telnet, and FTP ports for each box.
-- **Remote access** *(new)*: away from home use a **VPN** (WireGuard, Tailscale: nothing to configure) or a **DDNS address with forwarded ports**; the app uses the local network when the box answers and **switches by itself** to the remote address when you are out (streaming included).
+- **Remote access**: away from home use a **VPN** (WireGuard, Tailscale: nothing to configure) or a **DDNS address with forwarded ports**; the app uses the local network when the box answers and **switches by itself** to the remote address when you are out (streaming included).
 - **Connection Status**: Live banner showing online/offline status and current channel.
 - **Backup & Restore**: Export/Import all profiles, remote mappings, and parental settings to a JSON file.
 - **In-App Updates**: Automatic check for new GitHub releases on startup and manual check in Settings.
@@ -101,7 +103,7 @@ Here is the complete list of the features included in Enigma2Webif:
 - **Picons Support**: Automatically loads channel logos from the box.
 - **Technical Details**: tap 🛰️ on the current channel card to see video/audio/PCR/PMT/teletext PIDs, resolution, tuner and signal, **frequency, polarization, symbol rate, FEC and system**, and the **list of channels on the same transponder** (tap to tune). Frequencies are read from the box channel database (`lamedb`) over FTP.
 
-### 🎤 Voice control *(extended)*
+### 🎤 Voice control
 - **Natural phrases** in Italian, English, German, French and Spanish: change channel ("Switch to BBC One", "Rai one"), search ("Search movies with Brad Pitt", genres: movies / sports / news), "What's on tonight / now", volume, mute, standby (with confirmation), box remote keys, plugins.
 - **Language you speak**: chosen in Settings, independent from the app language (you can also say a phrase of another app language).
 - **"Voice commands" page**: the list of what the app understands, generated from the recogniser itself, so it never goes out of date (open it with "?" on the Home card or from Settings).
@@ -113,6 +115,7 @@ Here is the complete list of the features included in Enigma2Webif:
 - **Media Engine (Shiny)**: **Shiny.Maui.Controls.MediaElement** for rock-solid stability and PiP support.
 - **True Picture-in-Picture (PiP)**: The video player enters PiP mode showing the actual TV stream in a floating window.
 - **Built-in Video Player**: Watch TV directly in the app with transcoding profiles (Low is the default for immediate compatibility).
+- **One-button recording** *(new)*: in Live TV a single **Record / Stop recording** button, red or orange depending on whether the channel is being recorded.
 - **Robust streaming**: before opening the player the app checks that the stream really delivers data; if the transcoder refuses, it **falls back to the box direct stream**; if it fails, a **Retry** button appears. Errors during playback are recovered the same way. Only one stream is opened at a time (one tuner, one encoder).
 - **Home Mini Player**: A small video widget on the Home screen to keep an eye on the current channel while browsing the app.
 - **Listen Mode (Headphones)**: Route the TV audio to your phone's headphones (or Bluetooth) without disturbing the others in the room.
@@ -126,12 +129,12 @@ Here is the complete list of the features included in Enigma2Webif:
 - **Subservices**: Support for multistream channels (alternative commentators/feeds).
 - **Media Player (HDD)**: Browse your box's hard drive via FTP and play files directly on the TV or on your phone.
 - **Recordings Manager**: View, play, rename, move, copy, or delete recordings on your box.
-- **Background downloads** *(new)*: multi-select and download to the phone with a **notification and live progress**; the **queue** is listed under the progress bar, **✕ skips** the current file (the next one starts), **Cancel all** empties the queue; a file that fails does not stop the others. Saved in `Download/Enigma2Webif` (no storage permission needed).
+- **Background downloads**: multi-select and download to the phone with a **notification and live progress**; the **queue** is listed under the progress bar, **✕ skips** the current file (the next one starts), **Cancel all** empties the queue; a file that fails does not stop the others. Saved in `Download/Enigma2Webif` (no storage permission needed).
 - **Export M3U**: Save IPTV bouquets as `.m3u` files and share them via the native Android share menu.
 
 ### 🎛️ Remote, Power & Automation
 - **Advanced Virtual Remote**: Full physical layout with Haptic Feedback and Short/Long press support.
-- **Live pause** *(new)*: the **⏭ LIVE** button goes back to the live picture after a pause (it turns amber while the box is in timeshift).
+- **Live pause**: the **⏭ LIVE** button goes back to the live picture after a pause (it turns amber while the box is in timeshift).
 - **Button Setup**: Remap your hardware color keys (Red, Green, Yellow, Blue) with over 20 Enigma2 native actions.
 - **Custom RC Mapping**: Reassign what code is sent for 40+ remote buttons.
 - **Power Menu**: Standby, Deep Standby, Reboot, Restart GUI, Wake Up, and Wake-on-LAN (WOL). The power controls use a **red ⏻ icon** across the app.
@@ -146,13 +149,13 @@ Here is the complete list of the features included in Enigma2Webif:
 - **FTP Client**: browse the box file system with **symbolic links**, view and **edit text files** (an automatic `.bak` copy is written before saving), **rename, move (also across disks), delete, download to the phone, properties**, **new folder**, **upload**, **multi-select**. System folders are protected and risky deletions ask for a second confirmation.
 - **Telnet Client**: Auto-login terminal with quick command buttons (reboot, df -h, free, etc.).
 - **Softcam Integration**: Quick access to open OSCam and CCcam web interfaces (with editable ports).
-- **Screenshot Tool**: Capture your TV screen (All/Video/OSD, JPG/PNG, Native/UHD/WQHD). Share via the Android menu.
+- **Screenshot Tool** *(rebuilt)*: capture your TV screen (All / Video / OSD, JPG / PNG, Native/UHD/WQHD), **auto refresh** every 2–60 s, **save to the Gallery** (`Pictures/Enigma2Webif`, optionally every capture), channel name in the file name, **share**, **copy to the clipboard**, open **OpenWebif**, open the **Gallery**, status line (resolution, size, time) and the **full remote under the preview**.
 - **System Info / Box Info**: PIDs, satellites, tuner status, firmware, kernel, CPU, RAM, network and HDD, with a **picture of your box**.
 
 ### ⏰ Timers
 - **King System for Timers**: The Box is the absolute truth. No local cache, no duplicates. The app waits for Box confirmation and updates all screens (EPG, Home, Channel List, NowOnTv) instantly.
 - **Manual and EPG Timer Creation** with folder and advanced options (Just Play, Always Zap, PiP Zap); duplicate prevention.
-- **Overlap warning** *(new)*: when a new recording overlaps other timers (on a different channel) the confirmation lists them (max. 3 + "and N more") and you decide. Works from the EPG, the EPG grid, the event details and Now on TV.
+- **Overlap warning**: when a new recording overlaps other timers (on a different channel) the confirmation lists them (max. 3 + "and N more") and you decide. Works from the EPG, the EPG grid, the event details and Now on TV.
 - **NowOnTv Quick Actions**: Zap, Record Now, Timer for Next, Open EPG on every card.
 - **Timer Notifications**: Push notifications 2 minutes before a timer starts and 1 minute before it ends/fails.
 - **Calendar reminders**: add any timer or program to your phone calendar (📅). The calendar app opens with the event pre-filled — no permission needed, you confirm.
@@ -161,7 +164,7 @@ Here is the complete list of the features included in Enigma2Webif:
 - **Customizable Home**: Hide/Show, reorder, and restore default tiles. The current-channel card shows **channel name and programme**.
 - **Parental Control**: PIN-protect specific channels and bouquets.
 - **Home Assistant Webhook**: Send JSON events to your smart home when you change channels or start recordings.
-- **Home Screen Widgets** *(new)*: *Current channel* (channel name + programme), **Enigma2 Voice** (mic, volume down / mute / up) and **Enigma2 Remote** (power, CH−/CH+, pause, play). Voice and Remote **slide open** with ▶ and close with ◀, take one row of the home screen and send their commands **without opening the app**.
+- **Home Screen Widgets**: *Current channel* (channel name + programme), **Enigma2 Voice** (mic, volume down / mute / up) and **Enigma2 Remote** (power, CH−/CH+, pause, play). Voice and Remote **slide open** with ▶ and close with ◀, take one row of the home screen and send their commands **without opening the app**.
 - **Android TV Support**: Compatible with Android TV and Leanback.
 - **Responsive Layout**: Home grid scales to 3 or 4 columns on tablets and foldables.
 - **Light / Dark Theme** and **Material You**: on Android 12+ the app can use the colors of your wallpaper (Settings → Dynamic colors, then restart the app). Soft page animations (200 ms).
@@ -280,7 +283,7 @@ If you find this app useful, consider supporting the development:
 
 ## 📜 License
 
-GNU General Public License v3.0.
+GNU General Public License v3.0 — Copyright (C) 2026 Lululla. See the [LICENSE](LICENSE) file.
 
 ---
 
